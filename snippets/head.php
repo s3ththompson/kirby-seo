@@ -80,6 +80,6 @@ foreach ($mapOg as $property => $content) {
 
 
 <?php /** Robots */ ?>
-<?php if ($meta->robots()) : ?>
+<?php if (option('tobimori.seo.robots.active', true) && $meta->robots()) : ?>
   <meta name="robots" content="<?= $meta->robots() ?>">
 <?php endif ?>
